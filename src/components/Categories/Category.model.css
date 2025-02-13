@@ -1,0 +1,19 @@
+.catTitle {
+  position: relative;
+  width: fit-content;
+}
+
+.catTitle::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  background-color: rgb(29, 113, 186);
+  height: 4px;
+  width: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.catTitle:hover::before {
+  width: 90%;
+}
